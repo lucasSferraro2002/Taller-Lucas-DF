@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --rojo: #D72638;
+    --rojo-oscuro: #a81c29;
+    --negro: #0d0d0d;
+    --gris-oscuro: #1a1a1a;
+    --gris-medio: #2a2a2a;
+    --gris-claro: #3a3a3a;
+    --blanco: #f5f5f5;
+    --texto-muted: #888;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+}
+
+h1, h2, h3, .display-font {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+}
+
+/* Navbar */
+.navbar-taller {
+    background-color: var(--gris-oscuro) !important;
+    border-bottom: 2px solid var(--rojo);
+}
+
+.navbar-taller .navbar-brand {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.6rem;
+    color: var(--blanco) !important;
+    letter-spacing: 2px;
+}
+
+.navbar-taller .navbar-brand span {
+    color: var(--rojo);
+}
+
+.navbar-taller .nav-link {
+    color: var(--blanco) !important;
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+}
+
+.navbar-taller .nav-link:hover {
+    color: var(--rojo) !important;
+}
+
+/* Cards */
+.card-taller {
+    background-color: var(--gris-oscuro);
+    border: 1px solid var(--gris-claro);
+    border-radius: 8px;
+    color: var(--blanco);
+}
+
+.card-taller .card-header {
+    background-color: var(--gris-medio);
+    border-bottom: 1px solid var(--gris-claro);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: var(--blanco);
+}
+
+/* Botones */
+.btn-rojo {
+    background-color: var(--rojo);
+    color: white;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s;
+}
+
+.btn-rojo:hover {
+    background-color: var(--rojo-oscuro);
+    color: white;
+}
+
+.btn-outline-rojo {
+    border: 1px solid var(--rojo);
+    color: var(--rojo);
+    background: transparent;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.btn-outline-rojo:hover {
+    background-color: var(--rojo);
+    color: white;
+}
+
+/* Formularios */
+.form-control-dark,
+.form-select-dark {
+    background-color: var(--gris-medio) !important;
+    border: 1px solid var(--gris-claro) !important;
+    color: var(--blanco) !important;
+    border-radius: 6px;
+}
+
+.form-control-dark::placeholder {
+    color: var(--texto-muted);
+}
+
+.form-control-dark:focus,
+.form-select-dark:focus {
+    border-color: var(--rojo) !important;
+    box-shadow: 0 0 0 2px rgba(215, 38, 56, 0.25) !important;
+    outline: none;
+}
+
+.form-select-dark option {
+    background-color: var(--gris-medio);
+    color: var(--blanco);
+}
+
+/* Badges de estado */
+.badge-pendiente {
+    background-color: #f59e0b;
+    color: #000;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+}
+
+.badge-en_proceso {
+    background-color: #3b82f6;
+    color: #fff;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+}
+
+.badge-listo {
+    background-color: #22c55e;
+    color: #000;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+}
+
+/* Tabla */
+.tabla-taller {
+    color: var(--blanco) !important;
+}
+
+.tabla-taller thead th {
+    background-color: var(--gris-medio) !important;
+    color: var(--rojo) !important;
+    border-color: var(--gris-claro) !important;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.tabla-taller tbody tr {
+    background-color: var(--gris-oscuro) !important;
+    border-color: var(--gris-claro) !important;
+    color: var(--blanco) !important;
+    transition: background-color 0.15s;
+}
+
+.tabla-taller tbody tr:hover {
+    background-color: var(--gris-medio) !important;
+}
+
+.tabla-taller td {
+    border-color: var(--gris-claro) !important;
+    vertical-align: middle;
+}
+
+/* Hero */
+.hero-section {
+    background: linear-gradient(135deg, var(--negro) 0%, var(--gris-oscuro) 60%, #1f0a0c 100%);
+    border-bottom: 3px solid var(--rojo);
+    padding: 80px 0 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(215,38,56,0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* Page wrapper */
+.page-wrapper {
+    min-height: calc(100vh - 60px);
+    padding: 32px 0;
+}
+
+/* Stat cards */
+.stat-card {
+    background: var(--gris-oscuro);
+    border: 1px solid var(--gris-claro);
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--rojo);
+}
+
+.stat-card .stat-number {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.8rem;
+    color: var(--rojo);
+    line-height: 1;
+}
+
+.stat-card .stat-label {
+    font-size: 0.85rem;
+    color: var(--texto-muted);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Divider */
+.divider-rojo {
+    border: none;
+    border-top: 2px solid var(--rojo);
+    opacity: 1;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: var(--negro);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--rojo);
+    border-radius: 3px;
+}
+
+/* Footer */
+.footer-taller {
+    background-color: var(--gris-oscuro);
+    border-top: 2px solid var(--rojo);
+    padding: 20px 0;
+    color: var(--texto-muted);
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+/* Alerts */
+.alert-dark-danger {
+    background-color: rgba(215, 38, 56, 0.15);
+    border: 1px solid var(--rojo);
+    color: #ff8a8a;
+    border-radius: 6px;
+}
+
+.alert-dark-success {
+    background-color: rgba(34, 197, 94, 0.12);
+    border: 1px solid #22c55e;
+    color: #86efac;
+    border-radius: 6px;
+}
