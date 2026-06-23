@@ -4,7 +4,6 @@ import { servicios } from "../data/data.js";
 export default function Home() {
 return (
 <>
-{/* HERO */}
 <section className="hero-section">
     <div className="container">
         <div className="row align-items-center">
@@ -45,7 +44,6 @@ return (
     </div>
 </section>
 
-{/* STATS */}
 <section className="py-5" style={{ background: "var(--gris-oscuro)", borderBottom: "1px solid var(--gris-claro)" }}>
 <div className="container">
     <div className="row g-4 text-center">
@@ -66,7 +64,6 @@ return (
 </div>
 </section>
 
-{/* SERVICIOS */}
 <section className="py-5">
     <div className="container">
         <h2 className="mb-1" style={{ fontSize: "2.5rem" }}>NUESTROS SERVICIOS</h2>
@@ -89,7 +86,6 @@ return (
     </div>
 </section>
 
-{/* CTA */}
 <section className="py-5" style={{ background: "var(--gris-oscuro)", borderTop: "1px solid var(--gris-claro)" }}>
 <div className="container text-center">
     <h2 style={{ fontSize: "2.2rem" }}>¿LISTO PARA RESERVAR?</h2>

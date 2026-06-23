@@ -22,7 +22,6 @@ export function TallerProvider({ children }) {
         localStorage.setItem("taller_vehiculos", JSON.stringify(vehiculos));
     }, [vehiculos]);
 
-    // --- TURNOS ---
     const agregarTurno = (turno) => {
         const nuevo = { ...turno, id: Date.now(), estado: "pendiente" };
         setTurnos((prev) => [...prev, nuevo]);
@@ -42,7 +41,6 @@ export function TallerProvider({ children }) {
     const turnosDeUsuario = (usuarioId) =>
         turnos.filter((t) => t.usuarioId === usuarioId);
 
-    // --- VEHICULOS ---
     const agregarVehiculo = (vehiculo) => {
         const nuevo = { ...vehiculo, id: Date.now() };
         setVehiculos((prev) => [...prev, nuevo]);

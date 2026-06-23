@@ -29,7 +29,6 @@ h1, h2, h3, .display-font {
     letter-spacing: 1px;
 }
 
-/* Navbar */
 .navbar-taller {
     background-color: var(--gris-oscuro) !important;
     border-bottom: 2px solid var(--rojo);
@@ -58,7 +57,6 @@ h1, h2, h3, .display-font {
     color: var(--rojo) !important;
 }
 
-/* Cards */
 .card-taller {
     background-color: var(--gris-oscuro);
     border: 1px solid var(--gris-claro);
@@ -75,7 +73,6 @@ h1, h2, h3, .display-font {
     color: var(--blanco);
 }
 
-/* Botones */
 .btn-rojo {
     background-color: var(--rojo);
     color: white;
@@ -103,7 +100,6 @@ h1, h2, h3, .display-font {
     color: white;
 }
 
-/* Formularios */
 .form-control-dark,
 .form-select-dark {
     background-color: var(--gris-medio) !important;
@@ -128,7 +124,6 @@ h1, h2, h3, .display-font {
     color: var(--blanco);
 }
 
-/* Badges de estado */
 .badge-pendiente {
     background-color: #f59e0b;
     color: #000;
@@ -156,7 +151,6 @@ h1, h2, h3, .display-font {
     font-size: 0.78rem;
 }
 
-/* Tabla */
 .tabla-taller {
     color: var(--blanco) !important;
 }
@@ -186,7 +180,6 @@ h1, h2, h3, .display-font {
     vertical-align: middle;
 }
 
-/* Hero */
 .hero-section {
     background: linear-gradient(135deg, var(--negro) 0%, var(--gris-oscuro) 60%, #1f0a0c 100%);
     border-bottom: 3px solid var(--rojo);
@@ -206,13 +199,11 @@ h1, h2, h3, .display-font {
     pointer-events: none;
 }
 
-/* Page wrapper */
 .page-wrapper {
     min-height: calc(100vh - 60px);
     padding: 32px 0;
 }
 
-/* Stat cards */
 .stat-card {
     background: var(--gris-oscuro);
     border: 1px solid var(--gris-claro);
@@ -242,14 +233,12 @@ h1, h2, h3, .display-font {
     letter-spacing: 1px;
 }
 
-/* Divider */
 .divider-rojo {
     border: none;
     border-top: 2px solid var(--rojo);
     opacity: 1;
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar {
     width: 6px;
 }
@@ -261,7 +250,6 @@ h1, h2, h3, .display-font {
     border-radius: 3px;
 }
 
-/* Footer */
 .footer-taller {
     background-color: var(--gris-oscuro);
     border-top: 2px solid var(--rojo);
@@ -271,7 +259,6 @@ h1, h2, h3, .display-font {
     text-align: center;
 }
 
-/* Alerts */
 .alert-dark-danger {
     background-color: rgba(215, 38, 56, 0.15);
     border: 1px solid var(--rojo);

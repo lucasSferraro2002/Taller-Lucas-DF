@@ -21,7 +21,6 @@ function App() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/registro" element={<Registro />} />
 
-                {/* Rutas de Admin: solo accesibles si rol === "admin" */}
                 <Route
                     path="/admin/dashboard"
                     element={
@@ -47,7 +46,6 @@ function App() {
                     }
                 />
 
-                {/* Rutas de Cliente: solo accesibles si rol === "cliente" */}
                 <Route
                     path="/cliente/dashboard"
                     element={
